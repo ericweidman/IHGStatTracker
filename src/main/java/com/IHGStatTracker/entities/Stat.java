@@ -14,13 +14,27 @@ public class Stat {
     @GeneratedValue
     private int id;
 
-    @Column
+    @Column(name="booked")
+    private int didBook;
+
+    @Column(name="confirm")
     private int confirmationNumber;
 
-    @Column
+    @Column(name="total")
     private double total;
 
-    @Column
+    @Column(name="nights")
     private int numberOfNights;
 
+    @Column(name="enrollments")
+    private boolean enrollment;
+
+    @Column(name="HCV")
+    private int HCV;
+
+    @Column(name="hertz")
+    private int hertz;
+
+    @Column(name="chase")
+    private int chase;
 }
